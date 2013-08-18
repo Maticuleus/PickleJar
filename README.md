@@ -10,8 +10,3 @@ It uses watir's elements.find to search for the particular tag name and return t
 ->Goal<- 
 To avoid having to write an individual Cucumber Vocabulary for every specific kind of element search.
 The example in the .feature file shows how one Cucumber Vocabulary can use the Ruby method to find any element.
-
-More functionalities may be added in the future.
-
-->Status<-
-UNDER CONSTRUCTION
