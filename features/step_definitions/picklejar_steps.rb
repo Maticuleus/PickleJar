@@ -14,17 +14,17 @@ def searchElement(theBrowser=nil, elementClass=nil, elementName=nil, elementInde
 	
 	@index = 0
 	@finder = lambda { |ele|
-			if elementName && elementIndex
-				@result = (ele.text == elementName || ele.value == elementName) && @index == elementIndex.to_i
-			elsif elementName && !elementIndex
-				@result = (ele.text == elementName || ele.value == elementName)
-			elsif !elementName && elementIndex
-				@result = @index == elementIndex.to_i
-			end
+		if elementName && elementIndex
+			@result = (ele.text == elementName || ele.value == elementName) && @index == elementIndex.to_i
+		elsif elementName && !elementIndex
+			@result = (ele.text == elementName || ele.value == elementName)
+		elsif !elementName && elementIndex
+			@result = @index == elementIndex.to_i
+		end
 						
-			@index += 1
-			return @result
-			}
+		@index += 1
+		return @result
+	}
 	
 	case elementClass.to_s
 	when "link"
